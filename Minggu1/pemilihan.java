@@ -2,12 +2,14 @@ import java.util.Scanner;
 public class pemilihan {
 
     public static void main(String[] args) {
+        //Deklarasi scanner
         Scanner sc = new Scanner(System.in);
         double nilaiAkhir = 0;
 
         System.out.println("Program Menghitung Nilai Akhir");
         System.out.println("==============================");
-
+        
+        //Input nilai
         System.out.print("Masukkan nilai tugas: ");
         double nilaiTugas = sc.nextDouble();
         System.out.print("Masukkan nilai kuis: ");
@@ -22,9 +24,10 @@ public class pemilihan {
         if(nilaiTugas < 0 || nilaiTugas > 100 || nilaiKuis < 0 || nilaiKuis > 100 || nilaiUts < 0 || nilaiUts > 100 || nilaiUas < 0 || nilaiUas > 100) {
             System.out.println("Nilai tidak valid");
         } else {
-            nilaiAkhir = (nilaiTugas * 0.1) + (nilaiKuis * 0.2) + (nilaiUts * 0.3) + (nilaiUas * 0.4);
-            System.out.println("Masukkan nilai Akhir: " + nilaiAkhir);
-
+            nilaiAkhir = (nilaiTugas * 0.2) + (nilaiKuis * 0.2) + (nilaiUts * 0.3) + (nilaiUas * 0.3);
+            System.out.println("Masukkan nilai Akhir: " + nilaiAkhir); //Hitung nilai akhir
+            
+            //Ubah nilai huruf
             if (nilaiAkhir > 80 && nilaiAkhir <= 100) {
                 System.out.println("A");
             }else if (nilaiAkhir > 73 && nilaiAkhir <= 80){
@@ -43,7 +46,7 @@ public class pemilihan {
         }if(nilaiAkhir > 50 && nilaiAkhir <= 100){
             System.out.println("SELAMAT ANDA LULUS");
         }else{
-            System.out.println("MAAF ANDA TIDAK LULUS");
+            System.out.println("MAAF ANDA TIDAK LULUS"); //Keterangan lulus dan tidak lulus
         }  
     }
 }
