@@ -13,6 +13,6 @@ public class DosenMain24 {
         System.out.println("Masa kerja: " + masaKerja);
         d1.ubahKeahlian("DASPRO");
         d1.tampilInformasi();
-        System.out.println("Masa kerja" + masaKerja);
+        System.out.println("Masa kerja: " + masaKerja);
     }
 }
