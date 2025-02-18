@@ -4,9 +4,8 @@ public class Mahasiswa24 {
     String nim;
     String kelas;
     double ipk;
-    
     public Mahasiswa24(){
-
+        
     }
 
     void tampilkanInformasi() {
