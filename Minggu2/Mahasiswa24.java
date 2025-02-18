@@ -4,9 +4,9 @@ public class Mahasiswa24 {
     String nim;
     String kelas;
     double ipk;
+    
+    public Mahasiswa24(){
 
-    Mahasiswa24() {
-        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     void tampilkanInformasi() {
@@ -23,6 +23,9 @@ public class Mahasiswa24 {
 
     void updateIpk(double ipkBaru){
         ipk = ipkBaru;
+        if(ipk <= 0.0 && ipk >= 4.0){
+            System.out.println("IPK tidak valid. Harus antara 0.0 dan 4.0");
+        }
     }
 
     String nilaiKinerja(){
