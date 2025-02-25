@@ -3,7 +3,7 @@ public class Dosen24 {
     boolean jenisKelamin;
     int usia;
 
-    public Dosen24(String kode1, String nama1, boolean jenisKelamin1, int usia1){
+    public Dosen24(){
         this.kode = kode;
         this.nama = nama;
         this.jenisKelamin = jenisKelamin;
