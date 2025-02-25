@@ -3,6 +3,7 @@ public class MataKuliah24 {
     public String nama;
     public int sks;
     public int jumlahJam;
+    public String kodeMK;
 
     public MataKuliah24(String kode, String nama, int sks, int jumlajJam){
         this.kode = kode;
