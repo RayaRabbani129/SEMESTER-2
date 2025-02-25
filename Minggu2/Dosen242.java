@@ -1,4 +1,4 @@
-public class Dosen24 {
+public class Dosen242 {
     String idDosen, nama, bidangKeahlian, keAktifan;
     int tahunBergabung;
     boolean statusAktif;

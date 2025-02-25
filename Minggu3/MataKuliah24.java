@@ -3,7 +3,6 @@ public class MataKuliah24 {
     public String nama;
     public int sks;
     public int jumlahJam;
-    public String kodeMK;
 
     public MataKuliah24(String kode, String nama, int sks, int jumlajJam){
         this.kode = kode;
@@ -15,5 +14,12 @@ public class MataKuliah24 {
     void tambahData(int sks){
         sks = sks + sks;
         System.out.println("SKS berhasil ditambahkan");
+    }
+
+    void cetakInfo(){
+        System.out.println("Kode :" + kode);
+        System.out.println("Nama: " + nama);
+        System.out.println("Sks: " + sks);
+        System.out.println("Jumlah jam: " + jumlahJam);
     }
 }

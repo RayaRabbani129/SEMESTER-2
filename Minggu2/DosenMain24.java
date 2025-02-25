@@ -1,7 +1,7 @@
 public class DosenMain24 {
     public static void main(String[] args) {
         int masaKerja;
-        Dosen24 d1 = new Dosen24();
+        Dosen242 d1 = new Dosen242();
         d1.idDosen = "SP";
         d1.nama = "Suprapto";
         d1.bidangKeahlian = "SISOP";
