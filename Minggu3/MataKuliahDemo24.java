@@ -15,7 +15,7 @@ public class MataKuliahDemo24 {
             System.out.print("SKS: ");
             dummy = sc.nextLine();
             sks = Integer.parseInt(dummy);
-            System.out.print("Jumlaj jam: ");
+            System.out.print("Jumlah jam: ");
             dummy = sc.nextLine();
             jumlahJam = Integer.parseInt(dummy);
             System.out.println("-----------------------------------------");
