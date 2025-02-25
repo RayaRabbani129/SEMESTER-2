@@ -11,4 +11,9 @@ public class MataKuliah24 {
         this.sks = sks;
         this.jumlahJam = jumlahJam;
     }
+
+    void tambahData(int sks){
+        sks = sks + sks;
+        System.out.println("SKS berhasil ditambahkan");
+    }
 }
