@@ -1,5 +1,7 @@
 import java.util.Scanner;
-public class DosenDemo34 {
+public class DosenDemo24 {
+
+    private static Dosen24[] daftarDosen;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -26,5 +28,13 @@ public class DosenDemo34 {
             System.out.println("Data Dosen ke-" + (i+1));
             arrayOfDosen24[i].tampilkanInfo();
         }
+
+        System.out.println("\nData Dosen:");
+        DataDosen24.dataSemuaDosen(daftarDosen);
+        DataDosen24.jumlahDosenPerJenisKelamin(daftarDosen);
+        DataDosen24.rerataUsiaDosenPerJenisKelamin(daftarDosen);
+        DataDosen24.infoDosenPalingTua(daftarDosen);
+        DataDosen24.infoDosenPalingMuda(daftarDosen);
+        sc.close();
     }
 }
