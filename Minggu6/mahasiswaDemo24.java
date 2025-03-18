@@ -21,5 +21,8 @@ public class mahasiswaDemo24 {
         System.out.println("Data sudah diurutkan dengan SELECTION SOR (ASC)");
         list.selectionSort();
         list.tampil();
+        System.out.println("Data sudah diurutkan dengan INSERTION SORT (ASC)");
+        list.insertionSort();
+        list.tampil();
     }
 }
