@@ -90,15 +90,11 @@ public class mahasiswaBerprestasi24 {
         if (right >= left) {
             int mid;
             if(right >= left){
-                mid = (left+right)/2;
-                if (listMhs[mid].ipk == cari){
-                    return (mid);
-                }
-                else if (listMhs[mid].ipk < cari){
-                    return findBinarySearch(cari, left, mid-1);
-                }
-                else{
-                    return findBinarySearch(cari, mid+1, right); 
+                mid = (left-right)/2;
+                if (listMhs[mid].ipk < cari) { 
+                    return findBinarySearch(cari, left, mid - 1);
+                } else {
+                    return findBinarySearch(cari, mid + 1, right);
                 }
             }
         }

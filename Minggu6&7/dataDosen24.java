@@ -55,4 +55,57 @@ public class dataDosen24 {
             dataDosen24[j+1] = key;
         }
     }
-}
+
+    void pencarianDataSequential(String namaCari) {
+        boolean ditemukan = false;
+        System.out.println("\nHasil Pencarian (Sequential Search) untuk nama: " + namaCari);
+
+        for (int i = 0; i < dataDosen24.length; i++) {
+            if (dataDosen24[i].nama.equalsIgnoreCase(namaCari)) {
+                dataDosen24[i].tampil();
+                ditemukan = true;
+            }
+        }
+        if (!ditemukan) {
+            System.out.println("Dosen dengan nama " + namaCari + " tidak ditemukan.");
+        }
+    }
+
+    void urutkanBerdasarkanUsia() {
+        for (int i = 0; i < dataDosen24.length - 1; i++) {
+            for (int j = 0; j < dataDosen24.length - i - 1; j++) {
+                if (dataDosen24[j].usia > dataDosen24[j + 1].usia) {
+                    dosen24 temp = dataDosen24[j];
+                    dataDosen24[j] = dataDosen24[j + 1];
+                    dataDosen24[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+    void pencarianDataBinary(int usiaCari) {
+        int left = 0, right = dataDosen24.length - 1;
+        boolean ditemukan = false;
+        System.out.println("\nHasil Pencarian (Binary Search) untuk usia: " + usiaCari);
+        if(left <= right) {
+            int mid = left + (right - left) / 2;
+        }
+        if (dataDosen24[idx].usia == usiaCari) {
+            // Menemukan hasil, cari yang lain dengan for-loop
+            for (int i = idx; i >= 0 && dataDosen24[i].usia == usiaCari; i--) {
+                dataDosen24[i].tampil();
+                ditemukan = true;
+            }
+            for (int i = idx + 1; i < dataDosen24.length && dataDosen24[i].usia == usiaCari; i++) {
+                dataDosen24[i].tampil();
+                ditemukan = true;
+            }
+        }
+
+        if (dataDosen24[idx].usia < usiaCari) {
+            left = idx + 1;
+        } else {
+            right = idx - 1;
+        }
+    }
+}    
