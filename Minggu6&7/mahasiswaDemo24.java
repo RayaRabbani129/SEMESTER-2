@@ -19,16 +19,18 @@ public class mahasiswaDemo24 {
         }
 
         list.tampil();
-        // Pencarian data menggunakan sequential search
+        // Pencarian data menggunakan binery search
         System.out.println("=====================================");
         System.out.println("Pencarian data");
         System.out.println("=====================================");
         System.out.print("Masukkan IPK mahasiswa yang dicari: ");
         double cari = sc.nextDouble();
-
-        System.out.println("Menggunakan Sequential Searching");
-        int posisi = list.sequentialSearching(cari);
-        list.tampilPosisi(cari, posisi);
-        list.tampilDataSearch(cari, posisi);
+        System.out.println("-------------------------------------");
+        System.out.println("Menggunakan binery Searching");
+        System.out.println("-------------------------------------");
+        double posisi2 = list.findBinarySearch(cari, 0, jumMhs-1);
+        int pss2 = (int)posisi2;
+        list.tampilPosisi(cari, pss2);
+        list.tampilDataSearch(cari, pss2);
     }
 }
