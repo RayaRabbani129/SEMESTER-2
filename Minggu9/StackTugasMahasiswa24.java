@@ -74,4 +74,17 @@ public class StackTugasMahasiswa24 {
         }
         return biner;
     }
+
+    public mahasiswa24 lihatTugasTerbawah(){
+        if(!isEmpty()){
+            return stack[0];
+        }else{
+            System.out.println("Stack kosong");
+            return null;
+        }
+    }
+
+    public int jumlahTugas(){
+        return top +1;
+    }
 }
