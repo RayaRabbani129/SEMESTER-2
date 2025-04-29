@@ -30,7 +30,7 @@ public class StackTugasMahasiswa24 {
             top++;
             stack[top] = mhs;
         }else{
-            System.out.println("Stack penuh! Tidak bisa menambah tugas lagi.");
+            System.out.println("Stack penuh! Tidak bisa menambah surat lagi.");
         }
     }
 
