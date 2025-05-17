@@ -1,19 +1,42 @@
+import java.util.Scanner;
 public class SLLmain24 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         singleLinkedList24 sll = new singleLinkedList24();
 
-        mahasiswa24 mhs1 = new mahasiswa24("24212200", "Alvaro", "1A", 4.0);
-        mahasiswa24 mhs2 = new mahasiswa24("23212201", "Binom", "2B", 3.8);
-        mahasiswa24 mhs3 = new mahasiswa24("22212202", "Cintia", "3C", 3.5);
-        mahasiswa24 mhs4 = new mahasiswa24("21212203", "Dirga", "4D", 3.6);
+        System.out.print("Berapa banyak mahasiswa yang ingin ditambahkan? ");
+        int jumlah = sc.nextInt();
+        sc.nextLine(); 
+        
 
+        for (int i = 0; i < jumlah; i++) {
+            System.out.println("\nMahasiswa ke-" + (i + 1));
+            System.out.print("Nama   : ");
+            String nama = sc.nextLine();
+            System.out.print("NIM    : ");
+            String nim = sc.nextLine();
+            System.out.print("Kelas  : ");
+            String kelas = sc.nextLine();
+            System.out.print("IPK    : ");
+            double ipk = sc.nextDouble();
+            sc.nextLine(); 
+            
+            mahasiswa24 mhs = new mahasiswa24(nim, nama, kelas, ipk);
+            sll.addLast(mhs); 
+        }
+        System.out.println("\nData Linked List:");
         sll.print();
-        sll.addFrist(mhs4);
+        System.out.println("data index 1 : ");
+        sll.getData(1);
+
+        System.out.println("data mahasiswa an Bimon berada pada index : " + sll.indexOf("bimon"));
+        System.out.println();
+
+        sll.removeFirst();
+        sll.removeLast();
         sll.print();
-        sll.addLast(mhs1);
+        sll.removeAt(0);
         sll.print();
-        sll.insertAfter("Dirga", mhs3);
-        sll.insertAt(2, mhs2);
-        sll.print();
+
     }
 }
