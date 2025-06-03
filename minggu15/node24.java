@@ -1,6 +1,7 @@
 public class node24 {
     mahasiswa24 mahasiswa;
     node24 left, right;
+    public Object data;
 
     public node24(){
     }
