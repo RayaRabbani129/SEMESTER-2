@@ -1,5 +1,3 @@
-
-
 public class binaryTree24 {
     node24 root;
 
