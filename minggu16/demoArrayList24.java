@@ -11,10 +11,25 @@ public class demoArrayList24 {
 
         costumers.add(new costumer24(4, "Cica"));
 
-        costumers.add(2, new costumer24(100, "Rosa"));
+        costumers.add(new costumer24(100, "Rosa"));
+
+        System.out.println(costumers.indexOf(costumer2));
+
+        costumer24 costumer = costumers.get(1);
+        System.out.println(costumer.name);
+        costumer.name = "Budi Utomo";
+
+        ArrayList<costumer24> newCostumers = new ArrayList<>();
+        newCostumers.add(new costumer24(201, "Della"));
+        newCostumers.add(new costumer24(202, "Victor"));
+        newCostumers.add(new costumer24(203, "Sarah"));
+
+        costumers.addAll(newCostumers);
 
         for(costumer24 cust : costumers){
             System.out.println(cust.toString());
         }
+
+        System.out.println(costumers);
     }
 }
