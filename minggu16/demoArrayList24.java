@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 public class demoArrayList24 {
     public static void main(String[] args) {
         ArrayList<costumer24> costumers = new ArrayList<>(2);
@@ -29,6 +30,14 @@ public class demoArrayList24 {
         for(costumer24 cust : costumers){
             System.out.println(cust.toString());
         }
+
+        ArrayList<String> daftarSiswa = new ArrayList<>();
+        daftarSiswa.add("Zainab");
+        daftarSiswa.add("Andi");
+        daftarSiswa.add("Rara"); 
+        Collections.sort(daftarSiswa);
+
+        costumers.sort((c1, c2) -> c1.name.compareTo(c2.name));
 
         System.out.println(costumers);
     }
