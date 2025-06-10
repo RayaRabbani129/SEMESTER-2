@@ -1,6 +1,4 @@
-
 import java.util.ArrayList;
-
 public class demoArrayList24 {
     public static void main(String[] args) {
         ArrayList<costumer24> costumers = new ArrayList<>(2);
@@ -12,6 +10,8 @@ public class demoArrayList24 {
         costumers.add(costumer2);
 
         costumers.add(new costumer24(4, "Cica"));
+
+        costumers.add(2, new costumer24(100, "Rosa"));
 
         for(costumer24 cust : costumers){
             System.out.println(cust.toString());
